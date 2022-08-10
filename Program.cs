@@ -1,12 +1,24 @@
-﻿int a = -9;
-int b = -3;
+// Напишите программу, которая на вход принимает два числа и выдаёт максимальное.
 
-int max = a;
+//a = 5; b = 7 -> max = 7
+//a = 2 b = 10 -> max = 10
+//a = -9 b = -3 -> max = -3
 
-if (a > b) max = a; 
-if (b > a) max = b;
+Console.WriteLine("Введите первое число");
+double a = double.Parse(Console.ReadLine());
 
-Console.Write("max = ");
-Console.WriteLine(max);
+Console.WriteLine("Введите первое число");
+double b = double.Parse(Console.ReadLine());
+
+Console.WriteLine();
+
+if (a > b) 
+{
+    Console.WriteLine(a + " Больше, чем " + b);
+}
+else
+{
+    Console.WriteLine(b + " Больше, чем " + a);
+}
 
 
